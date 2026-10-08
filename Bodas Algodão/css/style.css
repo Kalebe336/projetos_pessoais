@@ -1,0 +1,440 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+body {
+    background: #171411;
+    color: #f8f3ec;
+    font-family: Arial, sans-serif
+}
+
+.pagina {
+    position: relative;
+    width: 100%;
+    height: 100svh;
+    min-height: 600px;
+    cursor: pointer;
+    overflow: hidden
+}
+
+.capa-img {
+    position: absolute;
+    inset: 0;
+    background: url('../img/foto-rosto.jpeg') center/cover
+}
+
+.degrade {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 28%, rgba(0, 0, 0, .08) 48%, rgba(0, 0, 0, .65) 78%, #171411 100%)
+}
+
+.conteudo {
+    position: absolute;
+    bottom: 55px;
+    width: 100%;
+    text-align: center;
+    padding: 0 25px
+}
+
+.conteudo small,
+.cabecalho small,
+.legenda small,
+.bodas small,
+.final small {
+    letter-spacing: .25em;
+    font-size: .6rem
+}
+
+.conteudo h1,
+.cabecalho h1,
+.legenda h1,
+.bodas h1,
+.final h1 {
+    font-family: Georgia, serif;
+    font-weight: 400;
+    line-height: .95
+}
+
+.conteudo h1 {
+    font-size: 3.6rem;
+    margin: 12px 0
+}
+
+.conteudo i {
+    font-size: .75em
+}
+
+.conteudo p {
+    letter-spacing: .3em;
+    font-size: .7rem
+}
+
+.toque,
+.aviso {
+    display: block;
+    margin-top: 35px;
+    text-transform: uppercase;
+    letter-spacing: .17em;
+    font-size: .55rem;
+    opacity: .65
+}
+
+.pagina-clara {
+    background: #f1ebe2;
+    color: #302820;
+    padding: 55px 22px
+}
+
+.cabecalho {
+    text-align: center
+}
+
+.cabecalho small {
+    color: #a48460
+}
+
+.cabecalho h1 {
+    font-size: 3.1rem;
+    margin: 12px 0
+}
+
+.cabecalho p {
+    font-size: .8rem;
+    color: #786e64;
+    line-height: 1.6
+}
+
+.grid-mini {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 38px
+}
+
+.grid-mini img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover
+}
+
+.aviso {
+    text-align: center;
+    color: #786e64
+}
+
+.foto-pagina>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.foto-pagina:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(transparent 35%, rgba(0, 0, 0, .15) 50%, rgba(0, 0, 0, .9) 100%)
+}
+
+.legenda {
+    position: absolute;
+    z-index: 2;
+    bottom: 48px;
+    left: 0;
+    width: 100%;
+    padding: 0 27px
+}
+
+.legenda small {
+    color: #d7bd9c
+}
+
+.legenda h1 {
+    font-size: 2.5rem;
+    margin: 12px 0
+}
+
+.legenda span {
+    font-size: .55rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    opacity: .65
+}
+
+.bodas {
+    background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, .08), transparent 25%), #28221c;
+    text-align: center;
+    padding: 0 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.algodao {
+    font-size: 4rem;
+    margin-bottom: 15px
+}
+
+.bodas small {
+    color: #c9ad88
+}
+
+.bodas h1 {
+    font-size: 3.7rem;
+    margin: 15px 0
+}
+
+.bodas p {
+    max-width: 430px;
+    color: #d0c6bb;
+    font-size: .84rem;
+    line-height: 1.9
+}
+
+.linha {
+    width: 55px;
+    height: 1px;
+    background: #b99a76;
+    margin: 28px
+}
+
+.bodas blockquote {
+    font-family: Georgia, serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #f1e7dc;
+    max-width: 400px
+}
+
+.bodas .toque {
+    position: absolute;
+    bottom: 35px
+}
+
+.final {
+    background: #171411;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px
+}
+
+.final small {
+    color: #c9ad88
+}
+
+.final h1 {
+    font-size: 3.6rem;
+    margin: 16px 0
+}
+
+.final p {
+    max-width: 400px;
+    color: #bfb5ab;
+    line-height: 1.8;
+    font-size: .82rem
+}
+
+.coracao {
+    font-family: Georgia, serif;
+    font-size: 4rem;
+    margin: 25px 0 8px
+}
+
+.final span {
+    font-size: .7rem;
+    letter-spacing: .15em
+}
+
+.final em {
+    position: absolute;
+    bottom: 32px;
+    font-style: normal;
+    font-size: .52rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    opacity: .45
+}
+
+@media(min-width:700px) {
+    .conteudo h1 {
+        font-size: 5rem
+    }
+
+    .foto-pagina>img {
+        object-position: center 40%
+    }
+
+    .legenda {
+        padding-left: 12%;
+        bottom: 70px
+    }
+
+    .bodas h1,
+    .final h1 {
+        font-size: 5rem
+    }
+}
+/* Capa refinada */
+.capa-img {
+    background-position: center center;
+    transform: scale(1.025);
+    transition: transform 2s ease;
+}
+
+.capa:hover .capa-img {
+    transform: scale(1.045);
+}
+
+.capa .degrade {
+    background:
+        linear-gradient(to bottom,
+            rgba(0,0,0,.03) 18%,
+            rgba(0,0,0,.08) 38%,
+            rgba(12,9,7,.38) 58%,
+            rgba(12,9,7,.82) 78%,
+            #171411 100%);
+}
+
+.capa .conteudo {
+    bottom: max(58px, env(safe-area-inset-bottom));
+    padding: 0 26px;
+}
+
+.ornamento {
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    color: #d3b78f;
+    margin-bottom: 13px;
+    opacity: .9;
+}
+
+.capa .eyebrow {
+    display: block;
+    color: rgba(255,248,238,.82);
+    letter-spacing: .34em;
+    font-size: .55rem;
+    font-weight: 400;
+}
+
+.capa h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 17px 0 12px;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(3.25rem, 14vw, 5.5rem);
+    font-weight: 400;
+    letter-spacing: .015em;
+    line-height: .82;
+    text-shadow: 0 3px 25px rgba(0,0,0,.3);
+}
+
+.capa h1 span {
+    display: block;
+}
+
+.capa h1 i {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: .65em;
+    font-weight: 400;
+    color: #d4b993;
+    margin-top: 8px;
+}
+
+.linha-nome {
+    width: 48px;
+    height: 1px;
+    margin: 17px auto 15px;
+    background: rgba(215,189,156,.8);
+}
+
+.capa .data {
+    color: rgba(255,248,238,.9);
+    letter-spacing: .42em;
+    font-size: .62rem;
+    padding-left: .42em;
+}
+
+.capa .toque {
+    margin-top: 38px;
+    color: #fff;
+    letter-spacing: .24em;
+    opacity: .58;
+}
+
+@media (min-width:700px) {
+    .capa .conteudo { bottom: 72px; }
+    .capa h1 { font-size: 5.8rem; }
+}
+
+/* Galeria: permite deslizar quando houver mais fotos do que cabe na tela */
+html:has(.galeria-page),
+body.galeria-page {
+    height: auto;
+    min-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.galeria-page {
+    min-height: 100svh;
+    height: auto;
+    cursor: default;
+    padding: 55px 22px 45px;
+}
+
+.galeria-page .cabecalho {
+    margin-bottom: 0;
+}
+
+.galeria-page .grid-mini {
+    margin-top: 38px;
+    padding-bottom: 5px;
+}
+
+.galeria-page .grid-mini a {
+    display: block;
+    overflow: hidden;
+}
+
+.galeria-page .grid-mini img {
+    display: block;
+    transition: transform .35s ease;
+}
+
+.galeria-page .grid-mini a:active img {
+    transform: scale(.97);
+}
+
+.galeria-page .aviso {
+    margin: 25px 0 0;
+}
+
+.continuar-fotos {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.continuar-fotos a {
+    color: #786e64;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .14em;
+    font-size: .55rem;
+    border-bottom: 1px solid rgba(120, 110, 100, .35);
+    padding-bottom: 5px;
+}
